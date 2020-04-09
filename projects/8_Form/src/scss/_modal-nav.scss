@@ -1,0 +1,16 @@
+.modal-nav {
+    &__list {
+        @include flex();
+        margin-bottom: 50px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 25px;
+    }
+    &__item {
+        border-bottom: 2px solid transparent;
+        &:hover {
+            border-bottom: 2px solid $tabs-hover-color;
+        }
+    }
+
+}
