@@ -7,6 +7,7 @@
     background-color: $btn-color;
     border: none;
     margin-bottom: 30px;
+    cursor: pointer;
     &:hover {
         background-color: $tabs-hover-color;
         outline-color: $tabs-hover-color;

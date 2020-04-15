@@ -1,15 +1,33 @@
 .form {
+    &__controls-wrapper:not(.form__links-wrapper) {
+        @include flex(flex-start, flex-start, column);
+        margin-bottom: 18px;
+    }
+    &__checkbox-wrapper {
+        @include flex(flex-start, center, row);
+        font-size: $small-size;
+        margin-bottom: 40px;
+    }
+    &__links-wrapper {
+        @include flex(space-between, center, row);
+    }
     &__label {
         font-size: $secondary-size;
         margin-bottom: 10px;
+
+        &--checkbox {
+            font-size: $small-size;
+            cursor: pointer;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
     }
     &__input {
         background: none;
         outline: none;
         width: 100%;
-        border: 2px solid rgba(191, 185, 204, 0.54);
-        // border: 2px solid $link-color;
-        // opacity: 0.54;
+        border: 2px solid rgba($link-color, 0.54);
         padding: 10px;
         color: $main-color;
         &:focus {
@@ -19,14 +37,12 @@
         &--repeat {
             margin-bottom: 17px;
         }
+        &:valid {
+            background-color: rgba($btn-color, 0.4);
+            border-color: $bg-color;
+        }
     }
-    &__label--checkbox {
-        font-size: $small-size;
-        cursor: pointer;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    }
+
     &__input-checkbox {
         width: 0;
         opacity: 0.5;

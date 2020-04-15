@@ -31,8 +31,6 @@ img {
     height: auto;
 }
 
-// #join {display: none;}
-
 .modal-container {
     min-width: 400px;
     min-height: 496px;
@@ -44,34 +42,21 @@ img {
     box-shadow: 0px 11px 23px 5px rgba(72, 74, 78, 0.8);
 }
 
-.form-controls-wrapper:not(.form-links-wrapper) {
-    @include flex(flex-start, flex-start, column);
-    margin-bottom: 18px;
-}
-.form-checkbox-wrapper {
-    @include flex(flex-start, center, row);
-    font-size: $small-size;
-    margin-bottom: 40px;
-}
-.form-links-wrapper {
-    @include flex(space-between, center, row);
-}
-
 .sections-container {
     position: relative;
     z-index: 1;
 }
 section {
-    position: absolute;
     width: 100%;
-    z-index: 0;
 }
 .sign-in {
     z-index: 3;
 }
+
+section:target, 
+.modal-nav__link:target {
+    z-index: 3;
+}
 section:not(:target) {
     display: none;
-}
-section:target {
-    z-index: 2;
 }
