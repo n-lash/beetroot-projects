@@ -1,0 +1,33 @@
+.socials {
+    margin-bottom: 30px;
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        span {
+            font-size: 0;
+        }
+        i {
+            font-size: $width-icon * 0.4;
+            color: $social-icon-color;
+            width: $width-icon;
+            height: $width-icon;
+            padding: 7px;
+            text-align: center;
+            @include border($width: 2px, $color: $social-icon-color);
+            border-radius: 50%;
+        }
+        &:hover {
+            i {
+                @include border($width: 2px, $color: $main-title-color);
+                color: $main-title-color;
+            }
+        }
+    }
+}

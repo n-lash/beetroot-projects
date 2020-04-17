@@ -1,0 +1,67 @@
+.slick-slider{
+    min-width: 0;
+}
+.slick-list {
+    overflow: hidden; 
+}
+
+.slick-track{
+    display: flex;
+}
+
+.slider {
+    position: relative;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 13px;
+    height: 23px;
+    cursor: pointer;
+}
+.slick-prev {
+    left: -14px;
+    background: url('../img/angle-left-icon.png') 0 0 no-repeat;
+    transition: all .2s ease;
+    &:hover {
+        transform: translateX(-3px);
+    }
+}
+
+.slick-next {
+    right: -14px;
+    background: url('../img/angle-right-icon.png') 0 0 no-repeat;
+    transition: all .2s ease;
+    &:hover {
+        transform: translateX(3px);
+    }
+}
+.slick-dots {
+    position: absolute;
+    bottom: -40px;
+    @include flex-row(center, center);
+}
+.slick-dots li {
+    margin-right: 9px;
+    text-align: center;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    @include border($color: $bg-color);
+    background-color: $main-title-color;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button {
+    @include border($color: $main-title-color);
+    border-radius: 50%;
+    background-color: transparent;
+}
+

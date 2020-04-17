@@ -1,0 +1,129 @@
+.slider {
+    
+    @extend %flex-center-row;
+    max-width: 1120px;
+    &__item {
+        @include flex-row(center);
+    }
+    &__item-foto {
+        flex: 1 0 50%;
+        // padding: 75px 82px 65px 57px;
+        padding-top: 8%;
+        padding-bottom: 65px;
+        padding-left: 7%;
+    }
+    &__item-img-wrapper {
+        width: 100%;
+        height: 100%;
+        border: 1px solid $main-title-color;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color:transparent;
+            border-bottom:  1px solid $main-title-color;
+
+            position: absolute;
+            bottom: -13px;
+            z-index: 0;
+        }
+        &::before {
+            border-left: 1px solid $main-title-color;
+            left: -14px;
+        }
+        &::after {
+            border-right: 1px solid $main-title-color;
+            right: -14px;
+        }
+    }
+
+    &__item-foto-wrapper {
+       position: relative;
+       width: 388px;
+       height: 388px;
+        &::before,
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: transparent; 
+            border-top:  1px solid $main-title-color;
+
+            position: absolute;
+            top: -13px;
+            z-index: 0;
+        }
+        &::before {
+            border-left: 1px solid $main-title-color;
+            left: -14px;
+        }
+
+        &::after {
+            border-right: 1px solid $main-title-color;
+            right: -14px;
+        }
+    }
+
+    &__item-info {
+        padding-top: 90px ;
+        padding-right: 46px;
+        padding-left: 84px;
+        @include flex-col($align: center);
+        border-left: 1px solid $main-title-color;
+    }
+
+    &__title {
+        @include text($slider-title-size, 900, $slider-title-color);
+        font-family: $secondary-font;
+        letter-spacing: 0.72px;
+        margin-bottom: 68px;
+        &::after {
+            content: '';
+            width: 100px;
+            height: 1px;
+            display: block;
+            margin: 0 auto;
+            background-color: $main-title-color;
+            position: relative;
+            top: 35px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+        @include text($slider-subtitle-size, 400, $slider-title-color);
+    }
+
+    &__text {
+        @include text($slider-text-size, 500, $slider-text-color);
+        line-height: 1.71;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    &__decoration {
+        width: 20px;
+        height: 4px;
+        background-color: $main-title-color;
+        margin-bottom: 26px;
+        position: relative;
+        &::before,
+        &::after {
+            content:'';
+            display: inline-block;
+            width: 10px;
+            height: 4px;
+            background-color: $main-title-color;
+            position: absolute;
+        }
+        &::before {
+            left: -15px;
+        }
+        &::after {
+            right: -15px;
+        }
+    }
+}

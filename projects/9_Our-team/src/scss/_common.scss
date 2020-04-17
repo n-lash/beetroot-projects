@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    min-height: 100vh;
+    font-size: 100%;
+}
+body {
+    background-color: $bg-color;
+    @include text($slider-text-size, $medium-weight, $slider-text-color);
+    font-family: $main-font;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: inherit;
+    color: inherit;
+    &:focus {
+        outline: none;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+button {
+    border: none;
+    outline: none;
+}
+.container {
+    max-width: 1140px;
+    min-width: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    @extend %flex-center-col;
+    height: 100%;
+}

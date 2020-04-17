@@ -1,0 +1,55 @@
+.our-team {
+    padding-top: 110px;
+    padding-bottom: 95px;
+    background-color: $bg-color;
+    &__subtitle {
+        @include text(
+            $main-subtitle-size,
+            $medium-weight,
+            $main-subtitle-color
+        );
+        font-family: $main-font;
+        line-height: 1.3;
+        letter-spacing: 0.36px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+    &__title {
+        @include text($main-title-size, $black-weight, $main-title-color);
+        font-family: $secondary-font;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    &__header {
+        position: relative;
+		margin-bottom: 60px;
+        margin-bottom: 59px;
+
+        &::after {
+            content: "";
+            // display: block;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            padding: 0 7px;
+            box-sizing: border-box;
+            transform: translateX(-50%);
+            width: 30px;
+            height: $bonfire-icon--height;
+            background: $bg-color url("../img/bonfire.svg") center no-repeat;
+		}
+		&::before {
+			content: "";
+            // display: block;
+            position: absolute;
+            bottom: $bonfire-icon--height / (-2);
+            left: 50%;
+            box-sizing: border-box;
+            transform: translateX(-50%);
+            width: 450px;
+            height: 1px;
+            background: $main-title-color;
+		}
+    }
+}
