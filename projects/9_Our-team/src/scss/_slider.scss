@@ -79,11 +79,10 @@
     }
 
     &__item-info {
-        padding-top: 90px ;
-        padding-right: 46px;
-        padding-left: 84px;
+        padding: 90px 46px 72px 84px;
         @include flex-col($align: center);
         border-left: 1px solid $main-title-color;
+        
     }
 
     &__title {
