@@ -1,0 +1,40 @@
+.main-nav {
+    @include flex-row(space-between, center);
+    margin-bottom: 258px;
+
+    &__list {
+        @include flex-row;
+    }
+    &__item {
+        margin-right: 40px;
+        text-transform: uppercase;
+        font-size: $H16;
+        font-weight: $bold;
+        line-height: 1.56;
+        // border-top: 3px solid red;
+        &:last-child {
+            margin-right: 0;
+        }  
+    }
+    
+    &__link {
+        &:before {
+            content: '';
+            width: 100%;
+            height: 3px;
+            display: inline-block;
+            background-color: transparent;
+        }
+        &:hover,
+        &--active {
+            &:before {
+                background-color: $btn-orange;
+            }
+        }
+        // &--active: {
+        //     &:before {
+        //         background-color: $btn-orange;
+        //     }
+        // }
+    }   
+}

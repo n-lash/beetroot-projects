@@ -1,0 +1,35 @@
+$scroll-width: 25px;
+.header {
+    min-height: 100vh;
+    padding: 50px 0 70px;
+    // padding-bottom: ;
+    background:url('../img/intro-bg.jpg') center center no-repeat;
+    // background-size: cover;
+    position: relative;
+    &__title {
+        @include text($H60, 900);
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+    &__descr {
+        max-width: 370px;
+        margin-bottom: 30px;
+    }
+    &__scroll {
+        background: url('../img/icons/scroll.png') center center no-repeat;
+        font-size: 0;
+        height: 40px;
+        position: absolute;
+        bottom: 70px;
+        width: $scroll-width;
+        left: calc(50% - #{$scroll-width} / 2);
+
+        &:hover {
+            opacity: 0.6;
+        }
+        &:active {
+            opacity: 1;
+            transform: scale(0.9);
+        }
+    }
+}
