@@ -1,7 +1,8 @@
 .contact {
-    padding: 100px 0 120px;
+    padding: 100px 0 80px;
     background: url('../img/contact-bg.jpg') center center no-repeat;
     background-size: cover;
+    position: relative;
 
     &__section-container {
         @include flex-col(center, center);
@@ -20,10 +21,29 @@
     &__item {
         @include text($H17, $bold);
         margin-bottom: 10px;
-        span {
+        a {
             display: block;
             @include text($H20, $light);
             line-height: 1.25;
+            &:hover {
+                color: $contact-input--focus-border;
+                text-decoration: overline;
+            }
+        }
+    }
+    &__link-totop {
+        display: block;
+        width: 45px;
+        height: 45px;
+        @include flex-col(center, center);
+        background-color: rgba($N0, 0.4);
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+        &:hover {
+            img {
+                transform: translateY(-20%);
+            }
         }
     }
 }

@@ -39,4 +39,10 @@
             background-color: darken($btn-red, 15%);
         }
     }
+    &--contact {
+        background-color: $contact-input--focus-border;
+        &:hover {
+            background-color: darken($contact-input--focus-border, 15%);
+        }
+    }
 }

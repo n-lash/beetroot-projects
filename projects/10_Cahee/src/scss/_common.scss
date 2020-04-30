@@ -47,7 +47,7 @@ textarea {
 
 .cahee-section-title {
     @include text($H90, 700, $N0);
-    line-height: 0.8;
+    line-height: 1.2;
     &--color-grey {
         color: $text-color;
     }

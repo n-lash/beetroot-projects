@@ -1,15 +1,15 @@
 .about-us {
     background-image: url('../img/about.png'), radial-gradient(circle at 0 0, #00c4c4, #00b7b7, #00adad, #009c9c), linear-gradient(to bottom, #00c4c4, #00c4c4);
     background-repeat: no-repeat, no-repeat;
-    background-size: 50%, 100%;
-    background-position: 0% 60%;
+    background-size: 45%, 100%;
+    background-position: 8% 60%;
     color: $N0;
     padding: 180px 0 220px;
     // padding: 70px 0 70px;
-    &__bg-img {
-        background-position: 5% 50%;
-        background-size: 40%;
-    }
+    // &__bg-img {
+    //     background-position: 5% 50%;
+    //     background-size: 40%;
+    // }
     &__section-container {
         @include flex-row(flex-end, center);
     }

@@ -1,5 +1,5 @@
 .form {
-    @include flex-col;
+    @include flex-col($align: flex-end);
     margin-right: 170px;
 
     &__input,
@@ -23,9 +23,13 @@
         margin-bottom: 15px;
         height: 50px;
         padding: 0 20px;
+        &:focus {
+            outline: none;
+        }
     }
     &__textarea {
         height: 250px;
         padding: 20px;
+        margin-bottom: 15px;
     }
 }
