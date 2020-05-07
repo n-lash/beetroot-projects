@@ -1,8 +1,9 @@
 .btn {
     padding: 0 25px;
+    // width: 100%;
     color: $N0;
     text-transform: uppercase;
-    min-width: 200px;
+    min-width: 100%;
     font-size: $H20;
     line-height: 1.35;
     height: 55px;
@@ -10,6 +11,10 @@
     justify-content: center;
     align-items: center;   
     box-shadow: 0px 2px 5px 0 rgba($N00, 0.5);
+
+    @include media($screen-tablet-small) {
+        min-width: 200px;
+    }
 
     &:active{
         box-shadow: 0px 1px 3px 0 rgba($N00, 0.5);
@@ -28,9 +33,12 @@
     }
     &--subscribe {
         background-color: $btn-green;
-        min-width: 170px;
+        width: 100%;
         &:hover {
             background-color: darken($btn-green, 15%);
+        }
+        @include media($screen-tablet-small) {
+            max-width: 170px;
         }
     }
     &--blog {

@@ -46,9 +46,16 @@ textarea {
 }
 
 .cahee-section-title {
-    @include text($H90, 700, $N0);
+    @include text($H60, 700, $N0);
     line-height: 1.2;
     &--color-grey {
         color: $text-color;
     }
+
+    @include media($screen-netbook) {
+      @include text($H90, 700, $N0);
+      &--color-grey {
+        color: $text-color;
+    }
+  }
 }

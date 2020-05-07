@@ -127,6 +127,9 @@
   $screen-iphone-6: 376px;
   $screen-iphone-plus: 415px;
   $screen-tablet-small: 480px;
+
+  $screen-tablet-medium: 577px;
+
   $screen-tablet: 769px;
   $screen-tablet-large: 861px;
   $screen-netbook: 993px;
@@ -141,3 +144,5 @@
       @content;
     }
   }
+// <576 | >=576 | >=768 | >=992 | >=1200
+// >=992 | >=1200

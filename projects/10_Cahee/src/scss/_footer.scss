@@ -4,12 +4,16 @@
     color: $footer-text-color;
     font-size: $H16;
     &__section-container {
-        @include flex-row(space-between, center);
+        @include flex-col(space-between, center);
+
+        @include media(620px) {
+            @include flex-row(space-between, center);
+        }
     }
     &__logo {
         width: 64px;
         height: 27px;
-        transform: translateX(-50%);
+        // transform: translateX(-50%);
     }
     &__text {
         &--left {
