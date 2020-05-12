@@ -13,7 +13,9 @@
     &__logo {
         width: 64px;
         height: 27px;
-        // transform: translateX(-50%);
+        &:hover {
+            opacity: 0.6;
+        }
     }
     &__text {
         &--left {

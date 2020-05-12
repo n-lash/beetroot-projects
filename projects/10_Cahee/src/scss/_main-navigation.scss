@@ -55,7 +55,7 @@ $styles: main-nav;
         font-weight: $bold;
         line-height: 1.1;
  
-        @include media($screen-tablet) {
+        @include media($screen-netbook) {
             margin-right: 40px;
         
             &:last-child {
@@ -84,7 +84,7 @@ $styles: main-nav;
         &:focus {
             color: lighten($text-color, 10%);
         }
-        @include media($screen-tablet) {
+        @include media($screen-netbook) {
             &:hover,
             &--active {
                 &:before {

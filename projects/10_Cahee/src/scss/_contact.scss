@@ -60,11 +60,16 @@
         display: block;
         width: 45px;
         height: 45px;
+        border-radius: 2px;
         @include flex-col(center, center);
         background-color: rgba($N0, 0.4);
         position: absolute;
         right: 25px;
         bottom: 25px;
+        img {
+            width: 55%;
+            height: auto;
+        }
         &:hover {
             img {
                 transform: translateY(-20%);
