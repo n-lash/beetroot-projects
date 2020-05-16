@@ -1,0 +1,119 @@
+.header {
+    padding: 265px 0 214px;
+    text-align: center;
+    background: $header-bg-color url('../img/header-bg.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    &__title {
+        font-family: $josefin;
+        @include text($H480, 700);
+        letter-spacing: 4.8px;
+        line-height: 1;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    &__slogan {
+        @include text($H220, 300);
+        line-height: 1;
+        letter-spacing: 6.82px;
+        margin-bottom: 50px;
+    }
+
+
+    &__link {
+        // margin-bottom: 134px;
+        &:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid $white;
+            border-bottom: 1px solid $white;
+            transform: rotate(45deg);
+            margin: 0 auto;
+        }
+        &:hover {
+            &:after {
+            // transform: translateY(5px);
+            // transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.form {
+    @include flex-row(center);
+    &__input {
+        width: 500px;
+        height: 60px;
+        padding: 0 15px;
+        text-align: center;
+        border: 1px solid $white;
+        margin-bottom: 120px;
+        font-size: $H60;
+        &:focus {
+            outline-color: darken($main-color, 20%);
+            // text-align: left;
+        }
+        &::placeholder {
+            @include text($H40, 300, $placeholder-color);
+            line-height: 1;
+            letter-spacing: 2.8px;
+        }
+    }
+    &__btn {
+        @include bhromaon-btn(160px);
+        border: 2px solid $white;
+        @include text($H40);
+        font-family: $aleo;
+        letter-spacing: 1.4px;
+        line-height: 1;
+        text-transform: uppercase;
+        &:hover {
+            border-color: darken($main-color, 20%);
+            border: 2px solid $main-color;
+            &:after {
+                opacity: 0;
+            }
+        }
+        img {
+            margin-left: 15px;
+        }
+    }
+}
+
+.nav {
+    background-color: $main-color;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    &__container {
+        @include flex-row(space-between, center);
+    }
+    &__logo {
+        @include text($H240, 700);
+        letter-spacing: 2.4px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    &__list {
+        @include flex-row(space-between, center);
+
+    }
+    &__item {
+        margin-right: 42px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        @include text($H40, 300);
+        font-family: $aleo;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,36 @@
+.footer {
+    background-color: $bg-spain-card;
+    padding: 120px 0 54px;
+    &__container {
+        max-width: 18%;
+        @include flex-col(center, center);
+    }
+
+    &__logo {
+        @include text($H240, 700, $white);
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 3.36px;
+        margin-bottom: 15px;
+    }
+
+    &__slogan {
+        text-transform: capitalize;
+        letter-spacing: 1.6px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+}
+
+.socials-list {
+    @include flex-row(space-between, center);
+    &__item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    &__link {
+        &:hover {
+            color: $main-color;
+        }
+    }
+}

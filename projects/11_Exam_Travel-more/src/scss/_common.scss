@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html, body {
+    min-height: 100vh;
+}
+body {
+    font-size: 100%;
+    font-family: $josefin;
+    font-weight: 300;
+    color: $white;
+    font-size: $H60;
+    background-color: $header-bg-color;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button {
+    border: none;
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;     
+}
+
+.bhromaon-title {
+    font-family: $aleo;
+    @include text($H360);
+    text-transform: capitalize;
+    line-height: 1;
+}

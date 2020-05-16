@@ -1,0 +1,42 @@
+.spain-booking {
+    padding: 228px 0 120px;
+    background: url('../img/spain-bg.jpg') center no-repeat;
+    background-size: cover;
+    &--inverse {
+        background: url('../img/spain-grand-bg.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    &__container {
+        // display: flex;
+        @include flex-row;
+        &--inverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &__article {
+        flex: 1 1 48%;
+        max-width: 540px;
+        background-color: rgba($bg-spain-card, 0.9);
+        padding: 50px 30px;
+    }
+    &__subtitle {
+        @include text($H200, 300, $light-grey);
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        @include text($H200, 300, $light-grey);
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__text {
+        line-height: 1.63;
+        margin-bottom: 48px;
+        font-weight: 300;
+    }
+    &__btn {
+        @include bhromaon-btn;
+    }
+}
