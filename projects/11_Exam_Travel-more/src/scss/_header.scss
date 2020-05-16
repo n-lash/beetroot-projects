@@ -23,7 +23,7 @@
 
 
     &__link {
-        // margin-bottom: 134px;
+    
         &:after {
             content: '';
             display: block;
@@ -45,14 +45,18 @@
 
 .form {
     @include flex-row(center);
+    margin-bottom: 90px;
+    @media screen and (min-height: 768px) {
+        margin-bottom: 120px;
+    }
     &__input {
         width: 500px;
         height: 60px;
         padding: 0 15px;
-        text-align: center;
+        // text-align: center;
         border: 1px solid $white;
-        margin-bottom: 120px;
         font-size: $H60;
+       
         &:focus {
             outline-color: darken($main-color, 20%);
             // text-align: left;
@@ -61,7 +65,10 @@
             @include text($H40, 300, $placeholder-color);
             line-height: 1;
             letter-spacing: 2.8px;
+            text-align: center;
         }
+
+        
     }
     &__btn {
         @include bhromaon-btn(160px);

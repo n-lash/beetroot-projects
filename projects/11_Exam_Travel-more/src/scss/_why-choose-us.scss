@@ -1,7 +1,12 @@
 .why-choose-us {
-    padding: 155px 0 0px;
-    background: url('../img/why-choose-bg.jpg') center no-repeat;
-    background-size: cover;
+    // padding: 155px 0 0px;
+    // background: url('../img/why-choose-bg.jpg') center no-repeat;
+    // background-size: cover;
+    &__img-container {
+        padding: 155px 0 0px;
+        background: url('../img/why-choose-bg.jpg') center no-repeat;
+        background-size: cover;
+    }
     &__container {
         @include flex-row;
         padding-bottom: 120px;
@@ -29,24 +34,6 @@
     }
     &__link {
         @include bhromaon-btn;
-        // position: relative;
-        // overflow: hidden;
-        // &:hover {
-        //     &:after {
-        //         content: '';
-        //         display: block;
-        //         width: 140px;
-        //         height: 80px;
-        //         background-color: $btn-hover-color;
-        //         position: absolute;
-        //         left: -25px;
-        //         bottom: -35px;
-        //         transform: rotate(45deg);
-        //         pointer-events: none;
-        //         opacity: 0.5;
-        //         z-index: 2;
-        //     }
-        // }
     }
 
     &__img-wrapper {
