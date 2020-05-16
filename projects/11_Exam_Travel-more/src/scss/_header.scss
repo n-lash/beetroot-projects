@@ -1,10 +1,15 @@
 .header {
-    padding: 265px 0 214px;
+    // padding: 265px 0 214px;
+    padding: 200px 0 180px;
     text-align: center;
     background: $header-bg-color url('../img/header-bg.jpg') center no-repeat;
     background-size: cover;
     min-height: 100vh;
     position: relative;
+
+    @media screen and (min-device-height: 768px) {
+        padding: 265px 0 214px;
+    }
 
     &__title {
         font-family: $josefin;
@@ -21,7 +26,6 @@
         margin-bottom: 50px;
     }
 
-
     &__link {
     
         &:after {
@@ -36,8 +40,7 @@
         }
         &:hover {
             &:after {
-            // transform: translateY(5px);
-            // transform: scale(1.1);
+                transform: rotate(45deg) translate(3px, 3px);
             }
         }
     }
