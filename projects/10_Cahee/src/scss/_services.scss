@@ -32,6 +32,7 @@
         }
         @include media($screen-iphone-plus) {
             font-size: $H60;
+            margin-bottom: 0;
         }
     }
     &__list {
