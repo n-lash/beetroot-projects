@@ -1,0 +1,60 @@
+.header {
+    // background-color: $bg-color--section;
+    background: $bg-color--section url('../img/Shadow.jpg') center no-repeat;
+    background-size: cover;
+    padding: 48px 0 30px;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+
+    &__container {
+        @include flex-col(space-between, center);
+        min-height: 100%;
+        flex: 1 1 100%;
+    }
+    &__title {
+        font-family: $santelia-script;
+        font-size: 72px;
+        line-height: 1; 
+        color: $text-color--light;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        font-family: $lato;
+        font-weight: $regular;
+        font-size: $H30;
+        letter-spacing: $H1-5;
+        color: $text-color--light;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__slider-dots {
+        // position: absolute;
+        bottom: 0;
+    }
+}
+
+.main-nav {
+    width: 100%;
+    @include flex-row(space-between, center);
+    &__logo {
+        font-family: $santelia-rough;
+        font-size: $H30;
+        color: #e9e5db;
+    }
+
+    &__list {
+        @include flex-row(space-between, center);
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &__link {
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+    }
+}

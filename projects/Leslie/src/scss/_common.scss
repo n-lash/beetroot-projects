@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,
+body {
+    min-height: 100vh;
+}
+body {
+    font-size: 100%;
+    font-family: $lato;
+    color: $text-color--dark;
+    font-weight: 300;
+    font-size: $H18;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+button {
+    border: none;
+    outline: none;
+    // color: $N0;
+    cursor: pointer;
+}
+input,
+textarea {
+    border: none;
+}
+textarea {
+    font: inherit;
+    // &:focus {
+    //     outline: none;
+    // }
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+    max-width: 1032px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ // color: $text-color--light;
+    
+    // слой на картинке - #050d0a 20%
+    // тень снизу - #595959 40%
+    // 979797 30% - quotes
+    // 000 - - 3c3930 65%
+    // footer - bg 766c5a,  градиент сверху вниз 595959
