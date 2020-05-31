@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Maven+Pro&display=swap');
+
+// Fonts
+$font--main: 'Lato', sans-serif;
+$font--title: 'Maven Pro', sans-serif;
+
+// Colors
+$bg-color--nav: #323232;
+$bg-color--portfolio: #ffffff;
+$bg-color--about: #2eb398;
+$bg-color--input: #454545;
+$bg-color--social-link: #7ac3b5;
+
+// 43baa3 ховер
+// 219d84 - vert line
+// aee1d7 - line :after portfolio
+
+$text-color--main: #bebebe;
+$text-color--title: #e0e0e0;
+$text-color--about-title: #d7fcf5;
+$text-color--about-subtitle: #20816d;
+$text-color--icon: #39b79e;
+
+// Size
+@function px_to_rem($target, $context: $base-size) {
+    @if $target==0 {
+      @return 0;
+    }
+  
+    @return $target / $context + 0rem;
+  }
+  
+  $base-size: 16px;
+  
+  /* ---FONT SIZE--- */
+  $H90: px_to_rem(90px);
+  $H72: px_to_rem(72px);
+  $H60: px_to_rem(60px);
+  $H55: px_to_rem(55px);
+  $H50: px_to_rem(50px);
+  $H48: px_to_rem(48px);
+  $H45: px_to_rem(45px);
+  $H40: px_to_rem(40px);
+  $H36: px_to_rem(36px);
+  $H35: px_to_rem(35px);
+  $H33: px_to_rem(33px);
+  $H32: px_to_rem(32px);
+  $H30: px_to_rem(30px);
+  $H28: px_to_rem(28px);
+  $H26: px_to_rem(26px);
+  $H24: px_to_rem(24px);
+  $H22: px_to_rem(22px);
+  $H21: px_to_rem(21px);
+  $H20: px_to_rem(20px);
+  $H19: px_to_rem(19px);
+  $H18: px_to_rem(18px);
+  $H17: px_to_rem(17px);
+  $H16: px_to_rem(16px);
+  $H15: px_to_rem(15px);
+  $H14: px_to_rem(14px);
+  $H13: px_to_rem(13px);
+  $H12: px_to_rem(12px);
+  $H11: px_to_rem(11px);
+  $H10: px_to_rem(10px);
+  $H9: px_to_rem(9px);
