@@ -1,6 +1,20 @@
 .portfolio {
     padding: 90px 0 90px;
+    position: relative;
 
+    &__container {
+        &:after {
+            content:'';
+            display: block;
+            width: 960px;
+            height: 1px;
+            background-color: #b2b2b2;
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
     &__list {
         display: flex;
         flex-wrap: wrap;

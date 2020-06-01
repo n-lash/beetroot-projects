@@ -1,0 +1,9 @@
+.footer {
+    background-color: $bg-color--footer;
+    padding: 16px 0 16px;
+
+    &__text {
+        font-family: $font--title;
+        @include text($H12, 400, $bg-color--input);
+    }
+}

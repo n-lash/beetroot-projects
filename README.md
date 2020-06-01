@@ -1,3 +1,31 @@
+### Front-End cource. Lessons List. part 2
+
+12. **Построение форм**
+* _[Form](https://n-lash.github.io/beetroot-projects/projects/8_Form/app/#sign)_
+13. **SVG**
+14. **Работа с пре- и постпроцессорами**
+15. **Инструмент для сборки проекта (таск-менеджер) Gulp**
+* _[Our team](https://n-lash.github.io/beetroot-projects/projects/9_Our-team/app/)_
+16. **Адаптивная верстка (Responsive web design)**
+* _[Cahee](https://n-lash.github.io/beetroot-projects/projects/10_Cahee/app/)_
+17. **Адаптивная навигация**
+18. **Адаптивная графика**
+19. **Практика - верстка макета**
+20. **Кроссбраузерность**
+21. **SEO для разработчика**
+22. **Экзамен 1. Простой вэб-сайт(desktop-версия)**
+* _[Travel more](https://n-lash.github.io/beetroot-projects/projects/11_Exam_Travel-more/app/)_
+
+
+
+
+
+
+
+
+
+
+----------------------------
 # Gulp-assembler
 * Install `gulp-cli`:
 ```

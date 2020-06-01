@@ -1,0 +1,110 @@
+.contacts {
+    padding: 12px 0 12px;
+    background-color: $bg-color--nav;
+
+    &__decor-wrapper {
+        max-width: 960px;
+        padding: 53px 0 53px;
+        margin: 0 auto;
+        border-top: 1px solid #2b2b2b;
+        border-bottom: 1px solid #2b2b2b;
+    }
+    &__container {
+        max-width: 810px;
+    }
+    &__content-wrapper {
+        @include flex-row;
+    }
+
+    &__title {
+        font-family: $font--title;
+        @include text($H30, 400, $text-color--title);
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+    &__descr {
+        font-family: $font--title;
+        @include text($H18, 400, $text-color--main);
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    &__text-wrapper {
+        flex: 1 1 25%;
+        padding-left: 10px;
+    }
+    &__text {
+        font-family: $font--main;
+        @include text($H12, 400, $text-color--main);
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 46px;
+        & span {
+            font-weight: 900;
+            color: $text-color--title;
+        }
+    }
+
+    &__link {
+        font-family: $font--main;
+        @include text($H12, 700, $text-color--main);
+        line-height: 1.8;
+        
+        &:before {
+            content: url('../img/location.png');
+            display: inline-block;
+            margin-right: 13px;
+        }
+        &:nth-of-type(2) {
+            &:before {
+                content: url('../img/phone.png');
+                margin-right: 10px;
+            }
+        }
+        &:nth-of-type(3) {
+            &:before {
+                content: url('../img/mail.png');
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.form {
+    flex: 1 1 75%;
+    padding-right: 10px;
+    @include flex-col;
+
+    &__input,
+    &__message {
+        min-width: 580px;
+        height: 38px;
+        padding: 0 15px;
+        background-color: $bg-color--input;
+        margin-bottom: 16px;
+
+        &::placeholder {
+            font-family: $font--main;
+            @include text($H12, 400, $text-color--main);
+            line-height: 1;
+        }
+    } 
+    &__input {
+        
+    }
+
+    &__message {
+        padding: 15px;
+        min-height: 150px;
+    }
+
+    &__btn {
+        align-self: flex-end;
+        min-width: 90px;
+        height: 37px;
+        padding: 20px;
+        color: $text-color--about-title;
+        text-transform: uppercase;
+        background-color: $bg-color--about;
+        @include flex-row(center, center);
+    }
+}

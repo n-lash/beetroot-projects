@@ -15,22 +15,22 @@
 			</a>
 			<ul class="nav__list">
 				<li class="nav__item">
-					<a href="" class="nav__link">portfolio</a>
+					<a href="#portfolio" class="nav__link">portfolio</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">about</a>
+					<a href="#about" class="nav__link">about</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">blog</a>
+					<a href="#" class="nav__link">blog</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">get in touch</a>
+					<a href="#contacts" class="nav__link">get in touch</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
-	<section class="portfolio">
-		<div class="container">
+	<section class="portfolio" id="portfolio">
+		<div class="portfolio__container  container">
 			<ul class="portfolio__list grid">
 				<li class="portfolio__item">
 					<div class="portfolio__content-wrapper">
@@ -155,30 +155,71 @@
 		</div>
 	</section>
 
-	<section class="about">
-		<div class="about__container  container">
-			<div class="about__img-wrapper">
-				<div class="about__hex">
-					<div class="about__hex-inner1">
-						<div class="about__hex-inner2"></div>
-					</div>
+	<section class="about" id="about">
+		<div class="about__decor-wrapper">
+			<div class="about__container  container">
+				<div class="about__img-wrapper">
+					<!-- <div class="about__hex">
+						<div class="about__hex-inner1">
+							<div class="about__hex-inner2"></div>
+						</div>
+					</div> -->
+	
+					<svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
+								<image xlink:href="./img/author.jpg" x="-25" width="150" height="100" />
+							</pattern>
+						</defs>
+						<polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
+					</svg>
 				</div>
-			</div>
-			<div class="about__text-wrapper">
-				<h1 class="about__title">Smith Anderson</h1>
-				<h3 class="about__subtitle">Illustrator & Character Designer</h3>
-				<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
-				<div class="about__socials">
-					<a class="about__socials-link" href="#"><i class="fab fa-facebook-f"></i></a>
-					<a class="about__socials-link" href="#"><i class="fab fa-twitter"></i></a>
-					<a class="about__socials-link" href="#"><i class="fab fa-google-plus-g"></i></a>
-					<a class="about__socials-link" href="#"><i class="fab fa-pinterest"></i></a>
-					<a class="about__socials-link" href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a class="about__socials-link" href="#"><i class="fab fa-dribbble"></i></a>
+				<div class="about__text-wrapper">
+					<h1 class="about__title">Smith Anderson</h1>
+					<h3 class="about__subtitle">Illustrator & Character Designer</h3>
+					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
+					<div class="about__socials">
+						<a class="about__socials-link" href="#"><i class="fab fa-facebook-f"></i></a>
+						<a class="about__socials-link" href="#"><i class="fab fa-twitter"></i></a>
+						<a class="about__socials-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+						<a class="about__socials-link" href="#"><i class="fab fa-pinterest"></i></a>
+						<a class="about__socials-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a class="about__socials-link" href="#"><i class="fab fa-dribbble"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<section class="contacts" id="contacts">
+		<div class="contacts__decor-wrapper">
+			<div class="contacts__container  container">
+				<h2 class="contacts__title">Get In Touch</h2>
+				<p class="contacts__descr">In order to get in touch use the contact form below:</p>
+				<div class="contacts__content-wrapper">
+					<form action="#" class="form">
+						<input class="form__input" type="text" name="userName" id="userName" placeholder="Name (Required)" required>
+						<input class="form__input" type="email" name="email" id="email" placeholder="Email (Required)" required>
+						<input class="form__input" type="text" name="subject" id="subject" placeholder="Subject">
+						<textarea class="form__message" name="message" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+						<button class="form__btn" type="submit">send</button>
+					</form>
+					<div class="contacts__text-wrapper">
+						<p class="contacts__text"><span>Quisque Hendrerit:</span> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
+							<a class="contacts__link" href="https://www.google.com.ua/maps/place/Elm+St,+Holborn,+London,+United+kingdom/@51.5228498,-0.1157106,17z/data=!3m1!4b1!4m5!3m4!1s0x48761b491d786bc7:0x783c2960d126fdf6!8m2!3d51.5228465!4d-0.1135219?hl=ru&authuser=0" target="_blank">Elm St. 14/05 Lost City</a>
+							<a class="contacts__link" href="tel:+35283318635">+ 3528 331 86 35</a>
+							<a class="contacts__link" href="mailto:info@hexalcorp.com">info@hexalcorp.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="footer__text">&copy; Copyright 2013 by PSDchat</p>
+		</div>
+	</footer>
 
 	<script src="https://kit.fontawesome.com/0829be64f7.js" crossorigin="anonymous"></script>
 	<script src="js/bundle.js"></script>
